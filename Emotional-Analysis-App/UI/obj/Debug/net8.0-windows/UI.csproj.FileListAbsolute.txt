@@ -24,3 +24,11 @@ C:\Users\33954\source\repos\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\r
 C:\Users\33954\source\repos\Emotional-Analysis-App\UI\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\33954\source\repos\Emotional-Analysis-App\UI\bin\Debug\net8.0-windows\API.dll
 C:\Users\33954\source\repos\Emotional-Analysis-App\UI\bin\Debug\net8.0-windows\API.pdb
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\UI.csproj.AssemblyReference.cache
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\UI_MarkupCompile.cache
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\UI_MarkupCompile.lref
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\UI.dll
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\refint\UI.dll
+C:\Users\33954\Desktop\C#大作业\.Net-Emotional-analysis-app\Emotional-Analysis-App\UI\obj\Debug\net8.0-windows\UI.pdb

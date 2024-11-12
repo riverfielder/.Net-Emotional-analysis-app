@@ -109,11 +109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\UI\\UI.csproj",
+      "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\33954\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\UI\\obj\\",
+      "outputPath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\33954\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -131,8 +131,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\API\\API.csproj": {
-              "projectPath": "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\API\\API.csproj"
+            "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj": {
+              "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj"
             }
           }
         }

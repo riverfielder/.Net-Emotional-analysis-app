@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EL8AIEEggfA=",
+  "dgSpecHash": "phzuggRZSpc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Test\\Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\33954\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\33954\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

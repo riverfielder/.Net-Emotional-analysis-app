@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iqTenEqR+mg=",
+  "dgSpecHash": "qF4Gv2pr3eI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\33954\\source\\repos\\Emotional-Analysis-App\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\33954\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\33954\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
