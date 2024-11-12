@@ -37,10 +37,7 @@
           "RestSharp": "106.15.0"
         },
         "runtime": {
-          "API.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "API.dll": {}
         }
       }
     }

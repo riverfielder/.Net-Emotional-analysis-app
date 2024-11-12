@@ -21,5 +21,18 @@ namespace UI
             InitializeComponent();
 
         }
+
+        private void loginJump(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
+
+
+        private void registJump(object sender, RoutedEventArgs e)
+        {
+            Regist regist = new Regist();
+            regist.Show();
+        }
     }
 }
