@@ -13,7 +13,7 @@ namespace API
 
         public Emotion() { }
 
-        public async Task<SentimentResult> GetSentimentAsync(string text)
+        public async Task<SentimentResult?> GetSentimentAsync(string text)
         {
             var client = new RestClient($"https://aip.baidubce.com/rpc/2.0/nlp/v1/sentiment_classify?charset=UTF-8&access_token={ACCESS_TOKEN}");
             client.Timeout = -1;

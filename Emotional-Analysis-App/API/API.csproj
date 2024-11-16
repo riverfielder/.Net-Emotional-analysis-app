@@ -11,4 +11,8 @@
     <PackageReference Include="RestSharp" Version="106.15.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Segmenter\Segmenter.csproj" />
+  </ItemGroup>
+
 </Project>
