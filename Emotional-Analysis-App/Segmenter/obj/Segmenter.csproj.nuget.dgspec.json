@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj": {}
+    "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\Net-Emotional-analysis-app-master\\new\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj": {
+    "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\Net-Emotional-analysis-app-master\\new\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj": {
       "version": "0.42.2",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj",
+        "projectUniqueName": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\Net-Emotional-analysis-app-master\\new\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj",
         "projectName": "JiebaNet.Segmenter",
-        "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj",
-        "packagesPath": "C:\\Users\\33954\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33954\\Desktop\\C#大作业\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\obj\\",
+        "projectPath": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\Net-Emotional-analysis-app-master\\new\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj",
+        "packagesPath": "C:\\Users\\王乐凡\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\Net-Emotional-analysis-app-master\\new\\Emotional-Analysis-App\\Segmenter\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\33954\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\王乐凡\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,9 +65,17 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "jieba.NET": {
+              "target": "Package",
+              "version": "[0.42.2, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
@@ -82,9 +89,17 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "jieba.NET": {
+              "target": "Package",
+              "version": "[0.42.2, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
@@ -102,6 +117,14 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "jieba.NET": {
+              "target": "Package",
+              "version": "[0.42.2, )"
             }
           },
           "imports": [
@@ -115,7 +138,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
