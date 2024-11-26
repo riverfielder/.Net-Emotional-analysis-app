@@ -821,12 +821,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HandyControl": "3.5.1",
           "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "4.7.0",
           "System.Data.SQLite": "1.0.119",
-          "System.Data.SQLite.Core": "1.0.119",
-          "jieba.NET": "0.42.2"
+          "System.Data.SQLite.Core": "1.0.119"
         },
         "compile": {
           "bin/placeholder/JiebaNet.Segmenter.dll": {}
@@ -2358,19 +2356,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\王乐凡\\.nuget\\packages\\": {}
+    "C:\\Users\\33954\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\1126n13\\1126\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\1126n13\\1126\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\Test\\Test.csproj",
-      "packagesPath": "C:\\Users\\王乐凡\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\1126n13\\1126\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\Test\\obj\\",
+      "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Test\\Test.csproj",
+      "packagesPath": "C:\\Users\\33954\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\王乐凡\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\33954\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2378,14 +2376,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\1126n13\\1126\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\API.csproj": {
-              "projectPath": "C:\\Users\\王乐凡\\Desktop\\学习\\.net\\1126n13\\1126\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\API.csproj"
+            "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj": {
+              "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj"
             }
           }
         }
@@ -2458,7 +2457,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
