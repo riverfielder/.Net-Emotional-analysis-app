@@ -1,0 +1,43 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="UI.UserInterface"
+        mc:Ignorable="d"
+        Name="userWindow"
+        Title="UserInterface" Height="600" Width="800" WindowStartupLocation="CenterScreen"  ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Center"  Height="{Binding Path=Height,ElementName=userWindow }" Width="{Binding Path=Width,ElementName=userWindow}" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="450"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="1" >
+            <WrapPanel Orientation="Vertical">
+                <Button Name="home" Content="Home" Click="home_Click"></Button>
+                <Button Name="wordcloud" Content="WordCloud" Click="wordcloud_Click"></Button>
+                <Button Name="graphs" Content="Graphs" Click="graphs_Click"></Button>
+            </WrapPanel>
+            <ContentControl Name="cont">
+                
+            </ContentControl>
+        </DockPanel>
+        <DockPanel Grid.Row="0" >
+
+            <hc:Tag Name="username" Margin="10" Content="username" Closed="UserChanged"/>
+            <Image Margin="10" Source="img/happy.png" Width="30" Height="40"  ></Image>
+            <ComboBox Margin="10"  Width="151" Height="21" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Name="minuteSelect" Content="xx minutes" />
+                <ComboBoxItem Name="hourSelect" Content="xx hours"/>
+                <ComboBoxItem Name="daySelect" Content="xx days"/>
+            </ComboBox>
+            <hc:SearchBar TextWrapping="Wrap" Text="Search"  Width="287" Height="30" SearchStarted="SearchFeeling"/>
+            <TextBox x:Name="t1" TextWrapping="Wrap" Text="TextBox" Width="100"/>
+        </DockPanel>
+        <hc:LoadingCircle Grid.Row="2" Margin="723,24,37,36"  RenderTransformOrigin="0.05,-0.031"/>
+    </Grid>
+
+
+</Window>
