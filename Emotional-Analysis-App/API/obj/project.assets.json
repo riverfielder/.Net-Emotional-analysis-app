@@ -45,21 +45,6 @@
           }
         }
       },
-      "jieba.NET/0.42.2": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3",
-          "System.Configuration.ConfigurationManager": "4.7.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/JiebaNet.Analyser.dll": {},
-          "lib/netstandard2.0/JiebaNet.Segmenter.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/JiebaNet.Analyser.dll": {},
-          "lib/netstandard2.0/JiebaNet.Segmenter.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -575,34 +560,6 @@
         "lib/netcoreapp3.1/HandyControl.dll",
         "lib/netcoreapp3.1/HandyControl.xml",
         "tools/VisualStudioToolsManifest.xml"
-      ]
-    },
-    "jieba.NET/0.42.2": {
-      "sha512": "QHt38dXnEGd1ZeZCBwW1oFAVzXULxQ6fxZG502gNR6n53Vt+7Ivs4+JzBsGT2tI/7HocL6vT1KcdrVpm+YVS9w==",
-      "type": "package",
-      "path": "jieba.net/0.42.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Resources/char_state_tab.json",
-        "Resources/cn_synonym.txt",
-        "Resources/dict.txt",
-        "Resources/idf.txt",
-        "Resources/pos_prob_emit.json",
-        "Resources/pos_prob_start.json",
-        "Resources/pos_prob_trans.json",
-        "Resources/prob_emit.json",
-        "Resources/prob_trans.json",
-        "Resources/stopwords.txt",
-        "content/_._",
-        "jieba.net.0.42.2.nupkg.sha512",
-        "jieba.net.nuspec",
-        "lib/net40/JiebaNet.Analyser.dll",
-        "lib/net40/JiebaNet.Segmenter.dll",
-        "lib/net45/JiebaNet.Analyser.dll",
-        "lib/net45/JiebaNet.Segmenter.dll",
-        "lib/netstandard2.0/JiebaNet.Analyser.dll",
-        "lib/netstandard2.0/JiebaNet.Segmenter.dll"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -1422,8 +1379,7 @@
       "Newtonsoft.Json >= 13.0.3",
       "RestSharp >= 106.15.0",
       "System.Data.SQLite >= 1.0.119",
-      "System.Data.SQLite.Core >= 1.0.119",
-      "jieba.NET >= 0.42.2"
+      "System.Data.SQLite.Core >= 1.0.119"
     ]
   },
   "packageFolders": {
@@ -1494,10 +1450,6 @@
           "System.Data.SQLite.Core": {
             "target": "Package",
             "version": "[1.0.119, )"
-          },
-          "jieba.NET": {
-            "target": "Package",
-            "version": "[0.42.2, )"
           }
         },
         "imports": [

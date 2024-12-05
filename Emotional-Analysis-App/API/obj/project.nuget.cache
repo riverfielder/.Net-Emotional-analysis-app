@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+ABn5XsOc4c=",
+  "dgSpecHash": "+HKt3SgTrdg=",
   "success": true,
   "projectFilePath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\33954\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\33954\\.nuget\\packages\\handycontrol\\3.5.1\\handycontrol.3.5.1.nupkg.sha512",
-    "C:\\Users\\33954\\.nuget\\packages\\jieba.net\\0.42.2\\jieba.net.0.42.2.nupkg.sha512",
     "C:\\Users\\33954\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\33954\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\33954\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

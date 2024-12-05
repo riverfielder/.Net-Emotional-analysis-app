@@ -145,7 +145,7 @@ namespace UI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UI;component/userinterface.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UI;V1.0.0.0;component/userinterface.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UserInterface.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

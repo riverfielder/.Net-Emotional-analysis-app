@@ -587,8 +587,7 @@
           "Newtonsoft.Json": "13.0.3",
           "RestSharp": "106.15.0",
           "System.Data.SQLite": "1.0.119",
-          "System.Data.SQLite.Core": "1.0.119",
-          "jieba.NET": "0.42.2"
+          "System.Data.SQLite.Core": "1.0.119"
         },
         "compile": {
           "bin/placeholder/API.dll": {}
