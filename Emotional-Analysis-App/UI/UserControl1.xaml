@@ -9,9 +9,14 @@
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" Name="homeText" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <Image Grid.Row="1"  Name="homeImage" Source="{Binding EmotionImage}"></Image>
+        <Image Grid.Row="0"  Name="homeImage" Source="{Binding EmotionImage}"></Image>
+        <TextBox Grid.Row="1" Name="homeText" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,42,0"></TextBox>
+        <WrapPanel Grid.Row="2" Orientation="Horizontal">
+            <Image Source="img/history.jpg" Height="37" RenderTransformOrigin="0.414,1.831" Margin="10"></Image>
+            <ListBox   d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged" Width="706" />
+        </WrapPanel>
     </Grid>
 </UserControl>

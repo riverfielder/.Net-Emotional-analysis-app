@@ -9,9 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\bg.png" />
     <None Remove="img\confidence.png" />
     <None Remove="img\happy.png" />
+    <None Remove="img\history.jpg" />
+    <None Remove="img\login.png" />
     <None Remove="img\love.png" />
+    <None Remove="img\regist.png" />
     <None Remove="img\sad.png" />
     <None Remove="img\studyhard.png" />
   </ItemGroup>
@@ -32,9 +36,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="img\bg.png" />
     <Resource Include="img\confidence.png" />
     <Resource Include="img\happy.png" />
+    <Resource Include="img\history.jpg" />
+    <Resource Include="img\login.png" />
     <Resource Include="img\love.png" />
+    <Resource Include="img\regist.png" />
     <Resource Include="img\sad.png" />
     <Resource Include="img\studyhard.png" />
   </ItemGroup>

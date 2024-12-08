@@ -7,36 +7,202 @@
         xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="UI.UserInterface"
         mc:Ignorable="d"
         Name="userWindow"
-        Title="UserInterface" Height="600" Width="800" WindowStartupLocation="CenterScreen"  ResizeMode="NoResize">
+        Title="UserInterface" Height="600" Width="800" WindowStartupLocation="CenterScreen"  ResizeMode="NoResize" Icon="/img/studyhard.png">
     <Grid HorizontalAlignment="Center"  Height="{Binding Path=Height,ElementName=userWindow }" Width="{Binding Path=Width,ElementName=userWindow}" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="341*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/bg.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="450"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <DockPanel Grid.Row="1" >
+        <DockPanel Grid.Row="1" Grid.ColumnSpan="2" >
             <WrapPanel Orientation="Vertical">
-                <Button Name="home" Content="Home" Click="home_Click"></Button>
-                <Button Name="wordcloud" Content="WordCloud" Click="wordcloud_Click"></Button>
-                <Button Name="graphs" Content="Graphs" Click="graphs_Click"></Button>
+                <Button Name="home" Content="Home" Click="home_Click" Width="150">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="LightBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="DodgerBlue"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="RoyalBlue"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Name="wordcloud" Content="WordCloud" Click="wordcloud_Click" Width="150">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="LightBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="DodgerBlue"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="RoyalBlue"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Name="graphs" Content="Graphs" Click="graphs_Click" Width="150">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="LightBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="Padding" Value="10"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="DodgerBlue"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" Value="RoyalBlue"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
             </WrapPanel>
             <ContentControl Name="cont">
-                
+
             </ContentControl>
         </DockPanel>
-        <DockPanel Grid.Row="0" >
-
+        <DockPanel Grid.Row="0" Grid.ColumnSpan="2">
             <hc:Tag Name="username" Margin="10" Content="username" Closed="UserChanged"/>
             <Image Margin="10" Source="img/happy.png" Width="30" Height="40"  ></Image>
             <ComboBox Margin="10"  Width="151" Height="21" SelectionChanged="ComboBox_SelectionChanged">
-                <ComboBoxItem Name="minuteSelect" Content="xx minutes" />
-                <ComboBoxItem Name="hourSelect" Content="xx hours"/>
-                <ComboBoxItem Name="daySelect" Content="xx days"/>
+                <ComboBoxItem Name="minuteSelect" Content="30 minutes" />
+                <ComboBoxItem Name="hourSelect" Content="24 hours"/>
+                <ComboBoxItem Name="daySelect" Content="7 days"/>
             </ComboBox>
-            <hc:SearchBar TextWrapping="Wrap" Text="Search"  Width="287" Height="30" SearchStarted="SearchFeeling"/>
-            <TextBox x:Name="t1" TextWrapping="Wrap" Text="TextBox" Width="100"/>
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Right">
+                <TextBlock Text="Settings" Margin="5"></TextBlock>
+                <ComboBox Name="settings" Width="150" Height="21" 
+                          SelectedValuePath="Content" SelectionChanged="settings_SelectionChanged">
+                    <ComboBoxItem Content="Pasteboard"/>
+                    <ComboBoxItem Content="Incognito mode"/>
+                </ComboBox>
+            </StackPanel>
         </DockPanel>
-        <hc:LoadingCircle Grid.Row="2" Margin="723,24,37,36"  RenderTransformOrigin="0.05,-0.031"/>
+        <hc:LoadingCircle Grid.Row="2" Margin="605,24,37,36"  RenderTransformOrigin="0.05,-0.031" Grid.Column="1"/>
+        <Button Grid.Column="1" Content="Save to local" HorizontalAlignment="Left" Margin="313,14,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Save_Click" Width="150">
+            
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="LightBlue"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Padding" Value="10"/>
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DodgerBlue"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="RoyalBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        <Button Grid.Column="1" Content="Submit" HorizontalAlignment="Left" Margin="136,16,0,0" Grid.Row="2" VerticalAlignment="Top" Width="150">
+      
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="LightBlue"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="10"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="DodgerBlue"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="RoyalBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 
 

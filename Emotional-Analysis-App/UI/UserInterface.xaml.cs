@@ -60,7 +60,7 @@ namespace UI
             var imageGenerator = new DrawImage();
 
             userId = GetUserIdByUsername(user, dbContext);
-            t1.Text = userId.ToString();
+         
 
             _userControl1ViewModel = new UserControl1ViewModel(emotionManager, emotionService, imageGenerator);
             _userControl2ViewModel = new UserControl2ViewModel(emotionManager, imageGenerator);
@@ -81,7 +81,6 @@ namespace UI
         {
             var userRepository = new UserRepository(emotionDb);
             var id = userRepository.GetUserIdByUsername(username);
-            System.Windows.MessageBox.Show("get userId:" + id);
             return id;
         }
 
@@ -129,17 +128,13 @@ namespace UI
 
         }
 
-        private void SearchFeeling(object sender, HandyControl.Data.FunctionEventArgs<string> e)
-        {
-
-        }
-
+       
 
 
         private void home_Click(object sender, RoutedEventArgs e)
         {
             cont.Content = userControl1;
-            System.Windows.MessageBox.Show("get userId:" + userId);
+
             // 如果需要，加载与用户相关的情感分析结果
             //_userControl1ViewModel.InputText = string.Empty; // 清空默认输入框
             //_userControl1ViewModel.EmotionImage = null;      // 清空默认图片
@@ -159,6 +154,18 @@ namespace UI
             cont.Content = userControl3;
             // 动态生成情感变化折线图，默认前 24 小时
             _userControl3ViewModel.GenerateEmotionLineChart(userId, 24, "hour");
+
+        }
+
+        private void settings_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //选项一：切换数据来源为粘贴板
+            //选项二：实现无痕浏览 即不保存用户数据到数据库
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            //保存对应词云或者折线图的数据到本地
 
         }
     }
