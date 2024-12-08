@@ -54,13 +54,8 @@ namespace UI
                 {
                     MessageBox.Show("Login successful!");
                     // Navigate to the next window
-                    UserInterface userInterface = new UserInterface();
+                    UserInterface userInterface = new UserInterface(username);
                     userInterface.Show();
-                    Tag tagUserName = userInterface.FindName("username") as Tag;
-                    if (tagUserName != null)
-                    {
-                        tagUserName.Content = username;
-                    }
                     loginWindow.Close();
                     //登录成功后关闭窗口
                     //并打开用户界面

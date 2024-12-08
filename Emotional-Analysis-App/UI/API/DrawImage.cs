@@ -11,8 +11,9 @@ namespace UI
         // 生成图云
         public BitmapSource GenerateWordCloud(Dictionary<string, int> wordFrequency)
         {
-            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string imagePath = Path.Combine(currentDirectory, "WordCloud.jpg");
+            string BaseDirectory = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "API"));
+            string imgFileName = "WordCloud.jpg";
+            string imagePath = Path.GetFullPath(Path.Combine(BaseDirectory, imgFileName));
             Image mask = Image.FromFile(imagePath);
             WordCloudGenerator wordCloudGenerator;
             if (mask == null)

@@ -30,12 +30,14 @@ namespace UI
         private UserControl2ViewModel _userControl2ViewModel;
         private UserControl3ViewModel _userControl3ViewModel;
 
+        public string userName;
         private int userId; // 用于存储从 username（Tag）中解析出的 userId
 
 
-        public UserInterface()
+        public UserInterface(string username)
         {
             InitializeComponent();
+            userName = username;
             //将数据源显示到AxleCanvas
             userControl1 = new UserControl1();
             userControl2 = new UserControl2();
@@ -48,7 +50,7 @@ namespace UI
         {
             // 从 Tag 中获取 username 并解析 userId
             //初始化时通过tag选择对应用户的数据源
-            string user = username.Content as string;
+            string user = userName;
             
 
             // 初始化 ViewModels

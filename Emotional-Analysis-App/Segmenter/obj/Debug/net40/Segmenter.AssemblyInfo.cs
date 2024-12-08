@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © andersc 2020")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("JiebaNet.Segmenter.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.42.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.42.2+76dff3f993b9cdb316751261501cc15b9ad2a90f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.42.2+edeba8b0297cba0b0dc673738291e047ddea73c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("JiebaNet.Segmenter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JiebaNet.Segmenter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.42.2.0")]
