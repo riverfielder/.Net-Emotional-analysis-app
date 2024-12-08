@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Microsoft.Win32;
+using System.Drawing;
 using System.IO;
 using System.Windows.Media.Imaging;
 
@@ -40,5 +41,52 @@ namespace UI
             EmotionImageGenerator emotionImageGenerator = new EmotionImageGenerator();
             return emotionImageGenerator.GenerateEmotionLineChartAsImage(emotionData);
         }
+
+        // 将图像保存在本地，失败返回false
+        public bool SaveImg(BitmapSource bitmapSource)
+        {
+            // 创建一个保存文件对话框
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            // 设置文件类型（可根据需要设置不同的扩展名）
+            saveFileDialog.Filter = "PNG Image (*.png)|*.png|JPEG Image (*.jpg)|*.jpg|All files (*.*)|*.*";
+
+            // 显示对话框并判断用户是否选择了文件
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                // 获取用户选择的路径
+                string filePath = saveFileDialog.FileName;
+
+                // 判断文件扩展名并选择合适的编码器
+                BitmapEncoder encoder = null;
+                string extension = Path.GetExtension(filePath).ToLower();
+
+                if (extension == ".png")
+                {
+                    encoder = new PngBitmapEncoder();
+                }
+                else if (extension == ".jpg" || extension == ".jpeg")
+                {
+                    encoder = new JpegBitmapEncoder();
+                }
+                else
+                {
+                    return false;
+                }
+
+                // 将 BitmapSource 转换为文件格式
+                encoder.Frames.Add(BitmapFrame.Create(bitmapSource));
+
+                // 使用 FileStream 保存文件
+                using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    encoder.Save(fileStream);
+                }
+
+                return true;
+            }
+            return false;
+        }
+
     }
 }

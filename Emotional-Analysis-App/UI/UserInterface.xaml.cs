@@ -42,12 +42,12 @@ namespace UI
             userControl1 = new UserControl1();
             userControl2 = new UserControl2();
             userControl3 = new UserControl3();
-
             InitializeWindow();
         }
 
         private void InitializeWindow()
         {
+            username.Content = userName;
             // 从 Tag 中获取 username 并解析 userId
             //初始化时通过tag选择对应用户的数据源
             string user = userName;

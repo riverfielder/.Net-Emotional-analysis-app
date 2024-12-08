@@ -142,7 +142,8 @@ namespace UI
                 Minimum = -1, // 消极情绪
                 Maximum = 1,  // 积极情绪
                 MajorGridlineStyle = LineStyle.Solid,
-                MinorGridlineStyle = LineStyle.Dot
+                MinorGridlineStyle = LineStyle.Dot,
+                FontSize = 20 // 调整字体大小
             });
 
             // 添加参考线 (情绪基准线)
@@ -153,7 +154,8 @@ namespace UI
                 Color = OxyColors.Gray,
                 StrokeThickness = 2,
                 Text = "一般情绪参照点",
-                TextHorizontalAlignment = HorizontalAlignment.Right
+                TextHorizontalAlignment = HorizontalAlignment.Right,
+                FontSize = 16 // 调整字体大小
             };
             plotModel.Annotations.Add(referenceLine);
 
@@ -161,13 +163,13 @@ namespace UI
             var positiveEmotionAnnotation = new TextAnnotation
             {
                 Text = "积极情绪",
-                TextPosition = new DataPoint(0.5, 0.9), // 设置为正坐标的上方
+                TextPosition = new DataPoint(2, 0.9), // 设置为正坐标的上方
                 TextHorizontalAlignment = HorizontalAlignment.Center,
                 TextVerticalAlignment = VerticalAlignment.Top,
                 Stroke = OxyColors.Transparent, // 无边框
                 TextColor = OxyColors.Green,    // 积极用绿色
                 FontWeight = OxyPlot.FontWeights.Bold,
-                FontSize = 14 // 调整字体大小
+                FontSize = 20 // 调整字体大小
             };
             plotModel.Annotations.Add(positiveEmotionAnnotation);
 
@@ -175,13 +177,13 @@ namespace UI
             var negativeEmotionAnnotation = new TextAnnotation
             {
                 Text = "消极情绪",
-                TextPosition = new DataPoint(0.5, -0.9), // 设置为负坐标的下方
+                TextPosition = new DataPoint(2, -0.9), // 设置为负坐标的下方
                 TextHorizontalAlignment = HorizontalAlignment.Center,
                 TextVerticalAlignment = VerticalAlignment.Bottom,
                 Stroke = OxyColors.Transparent, // 无边框
                 TextColor = OxyColors.Red,      // 消极用红色
                 FontWeight = OxyPlot.FontWeights.Bold,
-                FontSize = 14 // 调整字体大小
+                FontSize = 20 // 调整字体大小
             };
             plotModel.Annotations.Add(negativeEmotionAnnotation);
 
@@ -193,7 +195,8 @@ namespace UI
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 4,
                 MarkerFill = OxyColors.Blue,
-                StrokeThickness = 2
+                StrokeThickness = 2,
+                FontSize = 24 // 调整字体大小
             };
 
             // 添加数据点

@@ -17,5 +17,8 @@ namespace UI
 
         // 生成情感变化折线图
         public BitmapSource GenerateEmotionLineChartAsImage(Dictionary<int, double> emotionData);
+
+        // 将图像保存在本地，失败返回false
+        public bool SaveImg(BitmapSource bitmapSource);
     }
 }
