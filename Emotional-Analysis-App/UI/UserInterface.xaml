@@ -135,6 +135,7 @@
                           SelectedValuePath="Content" SelectionChanged="settings_SelectionChanged">
                     <ComboBoxItem Content="Pasteboard"/>
                     <ComboBoxItem Content="Incognito mode"/>
+                    <ComboBoxItem Content="Clear data"/>
                 </ComboBox>
             </StackPanel>
         </DockPanel>

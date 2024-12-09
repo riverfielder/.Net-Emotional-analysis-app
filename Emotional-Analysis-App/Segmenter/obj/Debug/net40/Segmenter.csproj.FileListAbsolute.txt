@@ -135,3 +135,8 @@ D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-mas
 D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\Segmenter\obj\Debug\net40\Segmenter.csproj.Up2Date
 D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\Segmenter\obj\Debug\net40\JiebaNet.Segmenter.dll
 D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\Segmenter\obj\Debug\net40\JiebaNet.Segmenter.pdb
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\Segmenter\bin\Debug\net40\EntityFramework.SqlServer.dll
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\Segmenter\bin\Debug\net40\EntityFramework.dll
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\Segmenter\bin\Debug\net40\System.Data.SQLite.dll
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\Segmenter\bin\Debug\net40\System.Data.SQLite.EF6.dll
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\Segmenter\bin\Debug\net40\System.Data.SQLite.Linq.dll

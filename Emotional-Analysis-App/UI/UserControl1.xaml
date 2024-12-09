@@ -13,10 +13,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image Grid.Row="0"  Name="homeImage" Source="{Binding EmotionImage}"></Image>
-        <TextBox Grid.Row="1" Name="homeText" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,42,0"></TextBox>
-        <WrapPanel Grid.Row="2" Orientation="Horizontal">
-            <Image Source="img/history.jpg" Height="37" RenderTransformOrigin="0.414,1.831" Margin="10"></Image>
-            <ListBox x:Name="historyListBox"   ItemsSource="{Binding HistoryRecords, UpdateSourceTrigger=PropertyChanged}" SelectionChanged="ListBox_SelectionChanged" Width="706" />
+        <TextBox Grid.Row="1" Name="homeText" Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" Margin="25,0,26,0"></TextBox>
+        <WrapPanel Grid.Row="2" Orientation="Horizontal" Margin="24,0,0,0">
+            <Image Source="img/history.jpg" Height="37" RenderTransformOrigin="0.414,1.831" Width="31"/>
+            <ListBox x:Name="historyListBox"   ItemsSource="{Binding HistoryRecords, UpdateSourceTrigger=PropertyChanged}" SelectionChanged="ListBox_SelectionChanged" Width="719" />
         </WrapPanel>
     </Grid>
 </UserControl>

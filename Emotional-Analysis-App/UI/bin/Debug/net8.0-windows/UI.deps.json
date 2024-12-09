@@ -346,10 +346,7 @@
           "System.Data.SQLite.Core": "1.0.119"
         },
         "runtime": {
-          "API.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "API.dll": {}
         }
       }
     }

@@ -167,3 +167,7 @@ D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-mas
 D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\API\obj\Debug\net8.0\API.pdb
 D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\API\obj\Debug\net8.0\ref\API.dll
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\API\bin\Debug\net8.0\API.runtimeconfig.json
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\API\obj\Debug\net8.0\API.Migrations.InitialCreate.resources
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\API\obj\Debug\net8.0\API.csproj.GenerateResource.cache
+D:\.netWork\.Net-Emotional-analysis-app\Emotional-Analysis-App\API\obj\Debug\net8.0\API.genruntimeconfig.cache
