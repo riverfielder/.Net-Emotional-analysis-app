@@ -22,7 +22,7 @@ namespace UI
     /// </summary>
     public partial class UserInterface : System.Windows.Window
     {
-        UserControl userControl1;
+        UserControl1 userControl1;
         UserControl userControl2;
         UserControl userControl3;
 
@@ -77,6 +77,9 @@ namespace UI
 
             // 初始化默认页面
             cont.Content = userControl1;
+
+            // 启动剪贴板监听
+            ClipboardNotification.Start();
         }
 
         private int GetUserIdByUsername(string username, EmotionDbContext emotionDb)
@@ -174,7 +177,40 @@ namespace UI
                 {
                     _userControl1ViewModel.IsIncognitoMode = false;
                 }
+                if (selectedSetting.Content.ToString() == "Pasteboard")
+                {
+                    // 订阅剪贴板更新事件
+                    ClipboardNotification.ClipboardUpdated += OnClipboardUpdated;
+                }
+                else
+                {
+                    ClipboardNotification.ClipboardUpdated -= OnClipboardUpdated;
+                }
             }
+        }
+
+        // 剪贴板更新事件处理
+        private void OnClipboardUpdated(object sender, EventArgs e)
+        {
+            // 在UI线程更新UI控件
+            Dispatcher.Invoke(() =>
+            {
+                // 你可以在这里获取剪贴板的内容，更新UI
+                if (Clipboard.ContainsText())
+                {
+                    string clipboardText = Clipboard.GetText();
+                    userControl1.homeText.Text = clipboardText;
+                    _userControl1ViewModel.SubmitAction();
+                }
+            });
+        }
+
+        // 确保窗口关闭时取消监听
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            // 如果需要，取消事件订阅
+            ClipboardNotification.ClipboardUpdated -= OnClipboardUpdated;
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)

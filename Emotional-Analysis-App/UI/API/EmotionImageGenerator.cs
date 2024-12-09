@@ -124,14 +124,37 @@ namespace UI
         {
             var plotModel = new PlotModel { Title = "情绪变化图" };
 
+            // 配色优化
+            var positiveColor = OxyColors.Orange; // 橙色折线
+            var referenceLineColor = OxyColors.Gray; // 灰色参考线
+            var backgroundColor = OxyColors.LemonChiffon; // 淡黄色背景
+            var axisColor = OxyColors.DarkSlateGray; // 深灰色坐标轴
+            var fontColor = OxyColors.DarkSlateBlue; // 深蓝色字体
+
+            // 设置标题字体和样式
+            plotModel.TitleFontSize = 24;
+            plotModel.TitleFontWeight = OxyPlot.FontWeights.Bold;
+            plotModel.TitleColor = fontColor;
+
+            // 设置背景色
+            plotModel.Background = backgroundColor;
+
             // 添加 X 轴 (时间)
             plotModel.Axes.Add(new LinearAxis
             {
                 Position = AxisPosition.Bottom,
                 Title = "时间",
                 Minimum = 0,
-                MajorGridlineStyle = LineStyle.Solid,
-                MinorGridlineStyle = LineStyle.Dot
+                MajorGridlineStyle = LineStyle.None,  // 禁用网格线
+                MinorGridlineStyle = LineStyle.None,  // 禁用网格线
+                TitleFontSize = 18,
+                TitleFontWeight = OxyPlot.FontWeights.Bold,
+                AxislineStyle = LineStyle.None,  // 去除坐标轴边框
+                AxislineColor = OxyColors.Transparent, // 无边框
+                TitleColor = fontColor,
+                TickStyle = TickStyle.None,  // 去除刻度线
+                MinorTickSize = 0,  // 不显示小刻度线
+                MajorTickSize = 0  // 不显示大刻度线
             });
 
             // 添加 Y 轴 (情绪值)
@@ -141,9 +164,16 @@ namespace UI
                 Title = "情绪值",
                 Minimum = -1, // 消极情绪
                 Maximum = 1,  // 积极情绪
-                MajorGridlineStyle = LineStyle.Solid,
-                MinorGridlineStyle = LineStyle.Dot,
-                FontSize = 20 // 调整字体大小
+                MajorGridlineStyle = LineStyle.None,  // 禁用网格线
+                MinorGridlineStyle = LineStyle.None,  // 禁用网格线
+                TitleFontSize = 20,
+                TitleFontWeight = OxyPlot.FontWeights.Bold,
+                AxislineStyle = LineStyle.None,  // 去除坐标轴边框
+                AxislineColor = OxyColors.Transparent, // 无边框
+                TitleColor = fontColor,
+                TickStyle = TickStyle.None,  // 去除刻度线
+                MinorTickSize = 0,  // 不显示小刻度线
+                MajorTickSize = 0  // 不显示大刻度线
             });
 
             // 添加参考线 (情绪基准线)
@@ -151,11 +181,12 @@ namespace UI
             {
                 Type = LineAnnotationType.Horizontal,
                 Y = 0,
-                Color = OxyColors.Gray,
+                Color = referenceLineColor,
                 StrokeThickness = 2,
                 Text = "一般情绪参照点",
                 TextHorizontalAlignment = HorizontalAlignment.Right,
-                FontSize = 16 // 调整字体大小
+                FontSize = 16,
+                TextColor = fontColor
             };
             plotModel.Annotations.Add(referenceLine);
 
@@ -187,16 +218,16 @@ namespace UI
             };
             plotModel.Annotations.Add(negativeEmotionAnnotation);
 
-            // 创建折线图系列
+            // 创建折线图系列，橙色折线
             var lineSeries = new LineSeries
             {
                 Title = "情绪变化",
-                Color = OxyColors.Red,  // 使用鲜艳的红色
+                Color = positiveColor,  // 橙色
                 MarkerType = MarkerType.Circle,
-                MarkerSize = 4,
-                MarkerFill = OxyColors.Blue,
-                StrokeThickness = 2,
-                FontSize = 24 // 调整字体大小
+                MarkerSize = 6,
+                MarkerFill = OxyColors.OrangeRed, // 标记点颜色
+                StrokeThickness = 3,
+                LineStyle = LineStyle.Solid, // 实线
             };
 
             // 添加数据点
@@ -209,7 +240,9 @@ namespace UI
             plotModel.Series.Add(lineSeries);
 
             // 渲染为 Bitmap
-            return new PngExporter { Width = 800, Height = 600 }.ExportToBitmap(plotModel);
+            var pngExporter = new PngExporter { Width = 800, Height = 600 };
+            return pngExporter.ExportToBitmap(plotModel);
         }
+
     }
 }

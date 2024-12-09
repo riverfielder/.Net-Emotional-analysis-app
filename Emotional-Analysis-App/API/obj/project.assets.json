@@ -1383,19 +1383,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\王乐凡\\.nuget\\packages\\": {}
+    "C:\\Users\\33954\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\王乐凡\\Documents\\WeChat Files\\wxid_93m7hcgyz8cc22\\FileStorage\\File\\2024-12\\1\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\王乐凡\\Documents\\WeChat Files\\wxid_93m7hcgyz8cc22\\FileStorage\\File\\2024-12\\1\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\王乐凡\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\王乐凡\\Documents\\WeChat Files\\wxid_93m7hcgyz8cc22\\FileStorage\\File\\2024-12\\1\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\obj\\",
+      "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\33954\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\王乐凡\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\33954\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1403,14 +1403,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\王乐凡\\Documents\\WeChat Files\\wxid_93m7hcgyz8cc22\\FileStorage\\File\\2024-12\\1\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj": {
-              "projectPath": "C:\\Users\\王乐凡\\Documents\\WeChat Files\\wxid_93m7hcgyz8cc22\\FileStorage\\File\\2024-12\\1\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj"
+            "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj": {
+              "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\Segmenter\\Segmenter.csproj"
             }
           }
         }
@@ -1467,7 +1468,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
