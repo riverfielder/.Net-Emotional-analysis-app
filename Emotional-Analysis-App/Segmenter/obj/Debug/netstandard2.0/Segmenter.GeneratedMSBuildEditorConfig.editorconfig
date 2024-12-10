@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = JiebaNet.Segmenter
+build_property.ProjectDir = D:\作业\.net\Net-Emotional-analysis-app-master\.Net-Emotional-analysis-app-master\Emotional-Analysis-App\Segmenter\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
