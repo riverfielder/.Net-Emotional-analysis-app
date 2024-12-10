@@ -34,7 +34,7 @@ namespace UI
         public BitmapSource GenerateWordCloud(Dictionary<string, int> wordFrequency)
         {
             if (wordFrequency == null || wordFrequency.Count == 0)
-                throw new ArgumentException("单词及其频率数据不能为空");
+                return null;
 
             // 提取单词和频率列表
             var words = wordFrequency.Select(it => it.Key).ToList();

@@ -1767,24 +1767,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows11\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\33954\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\作业\\.net\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "D:\\作业\\.net\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\UI\\UI.csproj",
-      "packagesPath": "C:\\Users\\Windows11\\.nuget\\packages\\",
-      "outputPath": "D:\\作业\\.net\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\UI\\obj\\",
+      "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\33954\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\UI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Windows11\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\33954\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1799,8 +1794,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\作业\\.net\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\API.csproj": {
-              "projectPath": "D:\\作业\\.net\\Net-Emotional-analysis-app-master\\.Net-Emotional-analysis-app-master\\Emotional-Analysis-App\\API\\API.csproj"
+            "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj": {
+              "projectPath": "C:\\Users\\33954\\Desktop\\C#大作业\\test\\.Net-Emotional-analysis-app\\Emotional-Analysis-App\\API\\API.csproj"
             }
           }
         }
@@ -1813,9 +1808,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -1873,30 +1867,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "包 \"System.Data.SqlClient\" 4.8.1 具有已知的 中 严重性漏洞，https://github.com/advisories/GHSA-8g2p-5pqh-5jmc",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "包 \"System.Data.SqlClient\" 4.8.1 具有已知的 高 严重性漏洞，https://github.com/advisories/GHSA-98g6-xh36-x2p7",
-      "libraryId": "System.Data.SqlClient",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

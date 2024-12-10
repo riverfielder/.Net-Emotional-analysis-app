@@ -7,8 +7,8 @@ namespace UI
 {
     public class DrawImage : IDrawImage
     {
-        private int _width = 400;
-        private int _height = 300;
+        private int _width = 450;
+        private int _height = 800;
         // 生成图云
         public BitmapSource GenerateWordCloud(Dictionary<string, int> wordFrequency)
         {
